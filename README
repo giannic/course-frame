@@ -1,0 +1,84 @@
+COURSE FRAME
+
+Introduction
+`````````````
+This project aims to provide an easy and quick way for instructors to create
+websites for their classes each term. This project is not meant to be
+extensible to other domains. However, it should save the instructor plenty of
+time.
+
+The main advantages of this 'framework' are:
+    There is a default clean and organized style set for the website.
+    The instructor does not need to edit any HTML or CSS ever.
+    There is a small learning curve to using this, if any.
+
+
+Set Up
+```````
+0. Upload the contents of this project to the home directory of your website
+   *Please back up any existing files on your server*
+1. Fill out the 'course.info' file by following the labels in the file.
+   *Please note that you can have multiple instructors and TAs*
+2. You should be set to go! Start posting announcements, projects, and exams.
+
+
+Announcements
+``````````````
+Post announcements by editting the 'announcements.info' file.
+The layout of each announcement should be as follows:
+
+Date
+Description
+
+Example:
+January 14th, 2012
+Homework 1 is posted.
+
+
+Posting Projects and Homeworks
+```````````````````````````````
+All projects go into the 'projects' directory. Each project should have its own
+directory within 'projects'. The files associated with each project should be
+placed in its appropriate directory.
+
+An example of the projects directory structure:
+projects/
+        homework1/
+                homework1.pdf
+        project1/
+                project1.pdf
+                starter_code.zip
+        homework2/
+                homework2.pdf
+        project2/
+                project2.pdf
+                starter_code.zip
+
+
+Posting Exams
+``````````````
+Posting exams are the same as posting projects and homeworks, but its root
+directory is 'exams'.
+
+An example of the exams directory structure:
+exams/
+        midterm1/
+                topics_covered.txt
+                practice_exams.zip
+        midterm2/
+                topics_covered.txt
+                practice_exams.zip
+        final/
+                topics_covered.txt
+                practice_exams.zip
+
+
+Samples
+````````
+If at any point, you find you are not sure what the 'info' files should look
+like, please refer to the sample files in the 'samples' directory.
+
+
+Author
+```````
+gianni
