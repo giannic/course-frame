@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteOptions MaxRedirects=1
+RewriteRule ^projects/$ projects.php
+RewriteRule ^exams/$ exams.php
