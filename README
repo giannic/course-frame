@@ -35,6 +35,13 @@ January 14th, 2012
 Homework 1 is posted.
 
 
+Syllabus
+`````````
+Upload the syllabus to the top-level directory of course frame. It will be
+automatically added to the site navigation. It can be any file format as it
+will open in a new tab.
+
+
 Posting Projects and Homeworks
 ```````````````````````````````
 All projects go into the 'projects' directory. Each project should have its own
@@ -77,6 +84,17 @@ Samples
 ````````
 If at any point, you find you are not sure what the 'info' files should look
 like, please refer to the sample files in the 'samples' directory.
+
+
+Tools
+``````
+There are a few scripts to swap between having php and html pages. They are
+located in 'tools'
+
+cf_to_html: generates static html pages from php.
+cf_to_php: generates restores the original php pages and removes html pages.
+
+Execute all scripts from the top-level directory of course frame.
 
 
 Author
