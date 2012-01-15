@@ -14,7 +14,7 @@
     <h2 class="page-title">Course Information</h2>
     <?php get_info(); ?>
 
-    <h2 class="page-title">Annoucements</h2>
+    <h2 class="page-title">Announcements</h2>
     <?php get_announcements(); ?>
   </div>
 </body>
