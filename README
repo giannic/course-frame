@@ -93,6 +93,7 @@ located in 'tools'
 
 cf_to_html: generates static html pages from php.
 cf_to_php: generates restores the original php pages and removes html pages.
+cf_update_html: updates the html pages using php. run cf_to_html first.
 
 Execute all scripts from the top-level directory of course frame.
 
