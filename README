@@ -42,6 +42,21 @@ automatically added to the site navigation. It can be any file format as it
 will open in a new tab.
 
 
+Posting Lectures and Notes
+```````````````````````````````
+All lectures go into the 'lectures' directory. Each lecture should have its own
+directory within 'lectures'. The files associated with each lecture should be
+placed in its appropriate directory.
+
+An example of the lectures directory structure:
+lectures/
+        lecture1/
+                lecture_slides1.pdf
+                lecture_audio.wav
+        lecture2/
+                lecture_slides2.pdf
+
+
 Posting Projects and Homeworks
 ```````````````````````````````
 All projects go into the 'projects' directory. Each project should have its own
@@ -89,13 +104,12 @@ like, please refer to the sample files in the 'samples' directory.
 Tools
 ``````
 There are a few scripts to swap between having php and html pages. They are
-located in 'tools'
+located in 'tools'. Execute all scripts from the top-level directory of course
+frame.
 
 cf_to_html: generates static html pages from php.
 cf_to_php: generates restores the original php pages and removes html pages.
-cf_update_html: updates the html pages using php. run cf_to_html first.
-
-Execute all scripts from the top-level directory of course frame.
+cf_update_html: updates the html pages using php. run cf_to_html.sh first.
 
 
 Author

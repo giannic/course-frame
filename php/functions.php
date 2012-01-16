@@ -14,6 +14,7 @@ function nav() {
                  echo "<a href='$syllabus' target='_blank'>Syllabus</a>";
               }
 
+              echo "<a href='lectures$suffix'>Lectures</a>";
               echo "<a href='projects$suffix'>Projects</a>";
               echo "<a href='exams$suffix'>Exams</a>";
          echo "</nav>";
