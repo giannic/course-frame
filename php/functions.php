@@ -17,6 +17,7 @@ function nav() {
               echo "<a href='lectures$suffix'>Lectures</a>";
               echo "<a href='projects$suffix'>Projects</a>";
               echo "<a href='exams$suffix'>Exams</a>";
+              echo "<a href='resources$suffix'>Resources</a>";
          echo "</nav>";
 }
 
@@ -67,16 +68,17 @@ function get_announcements() {
          $announce_file= 'announcements.info';
          if (file_exists($announce_file) && is_readable($announce_file)) {
             if (($announce_fh = fopen($announce_file, 'r'))) {
+               echo "<p>";
                while (!feof($announce_fh)) {
                      $line = fgets($announce_fh);
                      echo "$line<br/>";
                      $line = fgets($announce_fh); //prone to breaking
                      echo "$line<br/><br/>";
                }
+               echo "</p>";
                fclose($announce_fh);
             }
          }
-
 }
 
 function get_directory($basedir) {
@@ -89,7 +91,7 @@ function get_directory($basedir) {
                         }
 
                         if (($dir_dh = opendir("$basedir/$entry_dir"))) {
-                           echo $entry_dir."<br/>";
+                           echo "<p>$entry_dir</p>";
                            while (($entry = readdir($dir_dh)) !== false) {
                               if ($entry == ".." || $entry == ".") {
                                  continue;
@@ -102,6 +104,25 @@ function get_directory($basedir) {
                      }
                }
                closedir($base_dh);
+            }
+         }
+}
+
+function get_resources() {
+         $resource_file = 'resources.info';
+         if (file_exists($resource_file) && is_readable($resource_file)) {
+            if (($resource_fh = fopen($resource_file, 'r'))) {
+               while (!feof($resource_fh)) {
+                     $label = fgets($resource_fh);
+                     $url = fgets($resource_fh); //prone to breaking
+                     if (substr($url, 0, 8) !== "https://" && substr($url, 0, 7) !== "http://") {
+                       echo "<a href='http://$url' target='_blank'>$label</a><br/>";
+                     } else {
+                       echo "<a href='$url' target='_blank'>$label</a><br/>";
+                     }
+               }
+               echo "<br/>";
+               fclose($resource_fh);
             }
          }
 }

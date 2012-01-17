@@ -19,12 +19,13 @@ Set Up
    *Please back up any existing files on your server*
 1. Fill out the 'course.info' file by following the labels in the file.
    *Please note that you can have multiple instructors and TAs*
-2. You should be set to go! Start posting announcements, projects, and exams.
+2. You should be set to go! Start posting announcements, lectures, projects,
+   exams and resources.
 
 
 Announcements
 ``````````````
-Post announcements by editting the 'announcements.info' file.
+Post announcements by editing the 'announcements.info' file.
 The layout of each announcement should be as follows:
 
 Date
@@ -33,6 +34,8 @@ Description
 Example:
 January 14th, 2012
 Homework 1 is posted.
+February 1st, 2012
+Homework 2 is posted.
 
 
 Syllabus
@@ -43,7 +46,7 @@ will open in a new tab.
 
 
 Posting Lectures and Notes
-```````````````````````````````
+````````````````````````````
 All lectures go into the 'lectures' directory. Each lecture should have its own
 directory within 'lectures'. The files associated with each lecture should be
 placed in its appropriate directory.
@@ -93,6 +96,21 @@ exams/
         final/
                 topics_covered.txt
                 practice_exams.zip
+
+
+Posting Resources
+``````````````````
+Post resources by editing the 'resources.info' file.
+The layout of each link should be as follows:
+
+Label
+URL
+
+Example:
+Google
+www.google.com
+Penn Engineering
+http://www.seas.upenn.edu
 
 
 Samples
